@@ -1,0 +1,23 @@
+{
+  "name": "climbable-v2",
+  "homepage": "https://github.com/mannycarrera4/climbable-v2",
+  "authors": [
+    "mannycarrera4 <manuel.carrera.91@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "foundation-sites": "~6.0.5",
+    "requirejs": "~2.1.22"
+  }
+}
