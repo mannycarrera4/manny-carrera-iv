@@ -1,2 +1,27 @@
+@font-face {
+  font-family: "CamptonBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/campton/campton-bolddemo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/campton/campton-bolddemo-webfont.woff2") format("woff2"), url("../fonts/campton/campton-bolddemo-webfont.woff") format("woff"), url("../fonts/campton/campton-bolddemo-webfont.ttf") format("truetype"), url("../fonts/campton/campton-bolddemo-webfont.svg#CamptonBold") format("svg"); }
+
+body {
+  height: 100vh;
+  background: #007EE5; }
+
+.align-vertical-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; }
+
 .hero-title {
-  color: #333; }
+  color: #fff;
+  font-family: 'CamptonBold', sans-serif; }
+
+.logo {
+  height: 32px;
+  widows: 32px; }

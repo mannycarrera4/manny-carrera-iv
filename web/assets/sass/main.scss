@@ -1,5 +1,26 @@
 $primary-color: #333;
+@import '../vendor/bourbon/app/assets/stylesheets/bourbon';
+@import 'mixins';
+@import 'fonts';
+
+body {
+    height: 100vh;
+    background: #007EE5;
+}
+
+.align-vertical-center {
+    @include flexbox();
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
 .hero-title {
-    color: $primary-color;
+    color: #fff;
+    @include camptonBold();
+}
+
+.logo {
+    height: 32px;
+    widows: 32px;
 }

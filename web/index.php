@@ -11,12 +11,18 @@ $app->register(new Silex\Provider\TwigServiceProvider(), [
     'twig.path' => __DIR__.'/../src/views',
 ]);
 
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
+
 $app->error(function (\Exception $e, $code) {
     return new Response($e->getMessage());
 });
 
 $app->get('/', function () use ($app) {
     return $app['twig']->render('index.twig', []);
-});
+})->bind('home');
+
+$app->get('/about', function () use ($app) {
+    return $app['twig']->render('about.twig', []);
+})->bind('about');
 
 $app->run();
