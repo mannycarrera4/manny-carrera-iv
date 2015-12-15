@@ -19,6 +19,7 @@
     "jquery": "~2.1.4",
     "foundation-sites": "~6.0.5",
     "requirejs": "~2.1.22",
-    "bourbon": "~4.2.6"
+    "bourbon": "~4.2.6",
+    "foundation-icon-fonts": "*"
   }
 }

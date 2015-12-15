@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 .hero-title {
@@ -21,6 +22,17 @@ body {
 }
 
 .logo {
-    height: 32px;
-    widows: 32px;
+    height: 40px;
+    widows: 40px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .top-bar {
+        background: transparent;
+    }
 }

@@ -1,1 +1,7 @@
-console.log('Hello World');
+define(
+[
+    'jquery'
+],
+function($) {
+    $(document).foundation();
+});

@@ -6,11 +6,11 @@
 requirejs.config({
     baseUrl: './',
     paths: {
+        'jquery': 'assets/vendor/jquery/dist/jquery.min',
+        'foundation': 'assets/vendor/foundation-sites/dist/foundation.min'
     }
 });
 
 // Start loading the main app file. Put all of
 // your application logic in there.
 requirejs(['assets/js/main']);
-
-console.debug('hello world');

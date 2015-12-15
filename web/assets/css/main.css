@@ -4,6 +4,18 @@
   font-weight: normal;
   src: url("../fonts/campton/campton-bolddemo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/campton/campton-bolddemo-webfont.woff2") format("woff2"), url("../fonts/campton/campton-bolddemo-webfont.woff") format("woff"), url("../fonts/campton/campton-bolddemo-webfont.ttf") format("truetype"), url("../fonts/campton/campton-bolddemo-webfont.svg#CamptonBold") format("svg"); }
 
+@font-face {
+  font-family: "CamptonLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/campton/campton-lightdemo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/campton/campton-lightdemo-webfont.woff2") format("woff2"), url("../fonts/campton/campton-lightdemo-webfont.woff") format("woff"), url("../fonts/campton/campton-lightdemo-webfont.ttf") format("truetype"), url("../fonts/campton/campton-lightdemo-webfont.svg#CamptonLight") format("svg"); }
+
+@font-face {
+  font-family: "UbuntuBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ubuntu/ubuntu-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-bold-webfont.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-bold-webfont.woff") format("woff"), url("../fonts/ubuntu/ubuntu-bold-webfont.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-bold-webfont.svg#UbuntuBold") format("svg"); }
+
 body {
   height: 100vh;
   background: #007EE5; }
@@ -16,12 +28,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; }
+  height: 100vh;
+  flex-direction: column; }
 
 .hero-title {
   color: #fff;
   font-family: 'CamptonBold', sans-serif; }
 
 .logo {
-  height: 32px;
-  widows: 32px; }
+  height: 40px;
+  widows: 40px; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+  .fixed .top-bar {
+    background: transparent; }
