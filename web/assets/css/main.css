@@ -46,3 +46,7 @@ body {
   right: 0; }
   .fixed .top-bar {
     background: transparent; }
+
+.social-icon {
+  color: #fff;
+  font-size: 18px; }
