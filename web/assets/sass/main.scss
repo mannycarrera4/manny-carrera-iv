@@ -2,6 +2,7 @@ $primary-color: #333;
 @import '../vendor/bourbon/app/assets/stylesheets/bourbon';
 @import 'mixins';
 @import 'fonts';
+@import 'social-icons';
 
 body {
     height: 100vh;
@@ -35,9 +36,4 @@ body {
     .top-bar {
         background: transparent;
     }
-}
-
-.social-icon {
-    color: #fff;
-    font-size: 18px;
 }
