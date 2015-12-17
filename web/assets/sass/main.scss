@@ -3,6 +3,7 @@ $primary-color: #333;
 @import 'mixins';
 @import 'fonts';
 @import 'social-icons';
+@import 'foundation-override';
 
 body {
     height: 100vh;
