@@ -3,8 +3,23 @@
     background: transparent;
     border-radius: 50px;
     font-weight: bold;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    overflow: hidden;
 
     &:hover {
-        background: #2199e8;
+        background: #198BE8;
+    }
+
+    &:after {
+        position: absolute;
+        height: 100%;
+        font-size: 125%;
+        line-height: 3.5;
+        color: #fff;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
     }
 }

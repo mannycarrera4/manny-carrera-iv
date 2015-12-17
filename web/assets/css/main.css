@@ -86,13 +86,31 @@
   border: 2px solid #fff;
   background: transparent;
   border-radius: 50px;
-  font-weight: bold; }
+  font-weight: bold;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden; }
   .message-button:hover {
-    background: #2199e8; }
+    background: #198BE8; }
+  .message-button:after {
+    position: absolute;
+    height: 100%;
+    font-size: 125%;
+    line-height: 3.5;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
 
 body {
   height: 100vh;
-  background: #007EE5; }
+  background: #007EE5;
+  background: linear-gradient(rgba(0, 126, 229, 0.8), rgba(0, 126, 229, 0.8)), rgba(0, 126, 229, 0.8) url("../img/cover-img-portfolio.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .align-vertical-center {
   display: -webkit-box;
@@ -102,8 +120,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 96vh;
   flex-direction: column; }
+
+.footer {
+  font-size: 12px;
+  color: #fff;
+  padding: .5rem; }
 
 .hero-title {
   color: #fff;
