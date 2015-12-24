@@ -1,20 +1,25 @@
-.message-button {
+.button {
   border: 2px solid #fff;
   background: transparent;
   border-radius: 50px;
+  padding: 25px 80px;
   font-weight: bold;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  overflow: hidden; }
-  .message-button:hover {
+  overflow: hidden;
+  position: relative; }
+  .button:focus {
+    outline: none; }
+  .button:hover {
     background: #198BE8; }
-  .message-button:after {
+    .button:hover .fi-arrow-right,
+    .button:hover .fi-mail {
+      left: 80%; }
+  .button .fi-arrow-right,
+  .button .fi-mail {
+    left: 130%;
     position: absolute;
-    height: 100%;
-    font-size: 125%;
-    line-height: 3.5;
-    color: #fff;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s; }

@@ -21,6 +21,7 @@
 
         <div class="align-vertical-center">
             <h1 class="hero-title">Pixel Builder & Urban Sketcher</h1>
+            <p class="description">This is some text that's going to describe how awesome I am and tell how I work at opensky</p>
             <div class="social-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
                 <a class="link" href="https://dribbble.com/mcarrera4" target="_blank">
                     <i class="social-icon fi-social-dribbble"></i>
@@ -38,13 +39,17 @@
                     <i class="social-icon fi-social-linkedin"></i>
                 </a>
             </div>
-            <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
-                <button class="button message-button">Let's Talk!</button>
-                <button class="button message-button">View Projects</button>
-            </a>
+            <div>
+                <a href="{{ path('about') }}">
+                    <button class="button message-button">View Projects</button>
+                </a>
+                <a href="mailto:manuel.carrera.91@gmail.com?Subject=Hello%20again" target="_top">
+                    <button class="button email-button">Let's Talk!</button>
+                </a>
+            </div>
         </div>
         <footer class="footer">
-            <div>Copyright Manuel Carrera IV | All rights reserved</div>
+            <div>Copyright &copy; 2015 | Manuel Carrera IV | All Rights Reserved</div>
         </footer>
         <script type="text/javas" src="assets/vendor/jquery/dist/jquery.min.js"></script>
         <script type="text/javas" src="assets/vendor/foundation-sites/dist/foundation.min.js"></script>

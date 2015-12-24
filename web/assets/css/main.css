@@ -16,6 +16,12 @@
   font-weight: normal;
   src: url("../fonts/ubuntu/ubuntu-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-bold-webfont.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-bold-webfont.woff") format("woff"), url("../fonts/ubuntu/ubuntu-bold-webfont.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-bold-webfont.svg#UbuntuBold") format("svg"); }
 
+@font-face {
+  font-family: "UbuntuItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ubuntu/ubuntu-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-italic-webfont.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-italic-webfont.woff") format("woff"), url("../fonts/ubuntu/ubuntu-italic-webfont.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-italic-webfont.svg#UbuntuItalic") format("svg"); }
+
 .social-icon-wrap {
   text-align: center;
   margin: 0 auto;
@@ -82,23 +88,28 @@
       display: block;
       -webkit-font-smoothing: antialiased; }
 
-.message-button {
+.button {
   border: 2px solid #fff;
   background: transparent;
   border-radius: 50px;
+  padding: 25px 80px;
   font-weight: bold;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  overflow: hidden; }
-  .message-button:hover {
+  overflow: hidden;
+  position: relative; }
+  .button:focus {
+    outline: none; }
+  .button:hover {
     background: #198BE8; }
-  .message-button:after {
+    .button:hover .fi-arrow-right,
+    .button:hover .fi-mail {
+      left: 80%; }
+  .button .fi-arrow-right,
+  .button .fi-mail {
+    left: 130%;
     position: absolute;
-    height: 100%;
-    font-size: 125%;
-    line-height: 3.5;
-    color: #fff;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
@@ -126,15 +137,15 @@ body {
 .footer {
   font-size: 12px;
   color: #fff;
-  padding: .5rem; }
+  padding: 0 1rem; }
 
 .hero-title {
   color: #fff;
   font-family: 'CamptonBold', sans-serif; }
 
 .logo {
-  height: 40px;
-  widows: 40px; }
+  height: 45px;
+  widows: 45px; }
 
 .fixed {
   position: fixed;
@@ -142,4 +153,9 @@ body {
   left: 0;
   right: 0; }
   .fixed .top-bar {
-    background: transparent; }
+    background: transparent;
+    padding: 1rem; }
+
+.description {
+  color: #fff;
+  font-family: 'UbuntuItalic', sans-serif; }
