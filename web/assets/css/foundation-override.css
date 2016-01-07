@@ -8,7 +8,8 @@
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  -webkit-tap-highlight-color: transparent; }
   .button:focus {
     outline: none; }
   .button:hover {

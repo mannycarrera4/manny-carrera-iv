@@ -98,7 +98,8 @@
   -moz-transition: all 0.3s;
   transition: all 0.3s;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  -webkit-tap-highlight-color: transparent; }
   .button:focus {
     outline: none; }
   .button:hover {
@@ -117,7 +118,7 @@
 body {
   height: 100vh;
   background: #007EE5;
-  background: linear-gradient(rgba(0, 126, 229, 0.8), rgba(0, 126, 229, 0.8)), rgba(0, 126, 229, 0.8) url("../img/cover-img-portfolio.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 126, 229, 0.8), rgba(0, 126, 229, 0.8)), rgba(0, 126, 229, 0.8) url("../img/manny-sketches.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

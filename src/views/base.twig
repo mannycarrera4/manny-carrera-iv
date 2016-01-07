@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% block globalStylesheets %}
+            <link rel="stylesheet" href="assets/vendor/foundation-icon-fonts/foundation-icons.css">
+            <link rel="stylesheet" href="assets/vendor/foundation-sites/dist/foundation.min.css">
+            <link rel="stylesheet" href="assets/css/main.css">
+        {% endblock %}
+
+        {% block stylesheet '' %}
+    </head>
+    <body>
+        {% block header %}
+            {% include 'header.twig' %}
+        {% endblock %}
+
+        {% block body %}
+        {% endblock %}
+
+        <div class="align-vertical-center">
+            <h1 class="hero-title">Pixel Builder & Urban Sketcher</h1>
+            <p class="description">This is some text that's going to describe how awesome I am and tell how I work at opensky</p>
+            <div class="social-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                <a class="link" href="https://dribbble.com/mcarrera4" target="_blank">
+                    <i class="social-icon fi-social-dribbble"></i>
+                </a>
+                <a href="https://github.com/mannycarrera4" target="_blank">
+                    <i class="social-icon fi-social-github"></i>
+                </a>
+                <a href="https://www.instagram.com/mannysketches/" target="_blank">
+                   <i class="social-icon fi-social-instagram"></i>
+                </a>
+                <a href="https://twitter.com/mcarrera4" target="_blank">
+                    <i class="social-icon fi-social-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/manuelcarreraiv" target="_blank">
+                    <i class="social-icon fi-social-linkedin"></i>
+                </a>
+            </div>
+            <div>
+                <a href="{{ path('projects') }}">
+                    <button class="button message-button">View Projects</button>
+                </a>
+                <a href="mailto:manuel.carrera.91@gmail.com?Subject=Hello%20again" target="_top">
+                    <button class="button email-button">Let's Talk!</button>
+                </a>
+            </div>
+        </div>
+        {% block footer %}
+            {% include 'footer.twig' %}
+        {% endblock %}
+
+        {% block javascripts %}
+            <script type="text/javas" src="assets/vendor/jquery/dist/jquery.min.js"></script>
+            <script type="text/javas" src="assets/vendor/foundation-sites/dist/foundation.min.js"></script>
+            <script data-main="assets/js/config" src="assets/vendor/requirejs/require.js"></script>
+        {% endblock %}
+    </body>
+</html>

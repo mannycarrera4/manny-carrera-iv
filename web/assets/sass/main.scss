@@ -10,7 +10,7 @@ $gradient: linear-gradient($background-color, $background-color);
 body {
     height: 100vh;
     background: #007EE5;
-    background: $gradient, $background-color  url('../img/cover-img-portfolio.jpg') no-repeat center center fixed;
+    background: $gradient, $background-color  url('../img/manny-sketches.jpg') no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
