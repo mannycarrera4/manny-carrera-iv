@@ -1,4 +1,7 @@
-/* Overlay style */
+.fixed {
+    z-index: 1;
+}
+
 .menu-container {
     float: right;
     color: #fff;
@@ -12,7 +15,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: #fff;
+    background: rgba(33, 153, 232, 0.9);
     opacity: 0;
     visibility: hidden;
     -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
@@ -21,11 +24,43 @@
     &.open {
         opacity: 1;
         visibility: visible;
+        .align-vertical-center {
+            opacity: 0.1;
+        }
     }
 
     &.closed {
         opacity: 0;
         visibility: hidden;
+    }
+
+    .menu-list {
+        background: transparent;
+        text-align: center;
+
+        li > a {
+            color: #fff;
+            font-size: 40px;
+            @include ubuntuBold;
+        }
+    }
+
+    .close-icon {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        margin: 17px;
+        top: 9px;
+        right: 0;
+    }
+
+    .menu-nav {
+        position: relative;
+        top: 50%;
+        height: 60%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: center;
     }
 }
 
