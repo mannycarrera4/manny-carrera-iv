@@ -1,20 +1,28 @@
 $primary-color: #333;
-$background-color: rgba(0, 126, 229, 0.8);
+$background-color: rgba(0, 0, 0, 0.7);
 $gradient: linear-gradient($background-color, $background-color);
 @import '../vendor/bourbon/app/assets/stylesheets/bourbon';
 @import 'mixins';
 @import 'fonts';
 @import 'social-icons';
 @import 'foundation-override';
+@import 'animation';
+@import 'header';
 
 body {
     height: 100vh;
     background: #007EE5;
-    background: $gradient, $background-color  url('../img/manny-sketches.jpg') no-repeat center center fixed;
+    background: $gradient, $background-color  url('../img/background2.jpg') no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+
+      -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+             -moz-animation: fadein 2s; /* Firefox < 16 */
+              -ms-animation: fadein 2s; /* Internet Explorer */
+               -o-animation: fadein 2s; /* Opera < 12.1 */
+                  animation: fadein 2s;
 }
 
 .align-vertical-center {
