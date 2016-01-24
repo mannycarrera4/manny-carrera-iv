@@ -16,19 +16,23 @@
         {% block stylesheet '' %}
     </head>
     <body>
-        {% block header %}
-            {% include 'header.twig' %}
-        {% endblock %}
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+                <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right"></div>
+                <div class="off-canvas-content mc-off-canvas-content" data-off-canvas-content>
+                    {% block header %}
+                        {% include 'header.twig' %}
+                    {% endblock %}
+                    {% block body '' %}
 
-        {% block body '' %}
-
-        {% block footer %}
-            {% include 'footer.twig' %}
-        {% endblock %}
+                    {% block footer %}
+                        {% include 'footer.twig' %}
+                    {% endblock %}
+                </div>
+            </div>
+          </div>
 
         {% block javascripts %}
-            <script type="text/javas" src="assets/vendor/jquery/dist/jquery.min.js"></script>
-            <script type="text/javas" src="assets/vendor/foundation-sites/dist/foundation.min.js"></script>
             <script data-main="assets/js/config" src="assets/vendor/requirejs/require.js"></script>
         {% endblock %}
     </body>

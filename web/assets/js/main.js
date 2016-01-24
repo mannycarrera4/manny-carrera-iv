@@ -1,11 +1,19 @@
 define(
 [
-    'jquery'
+    'jquery',
+    'foundation'
 ],
-function($) {
+function($, Foundation) {
 
     var page = {
         init: function() {
+            console.debug(Foundation);
+            console.debug($);
+
+            if(window.Foundation) {
+                $(document).foundation();
+            }
+
             $('.message-button').append('<i class="fi-arrow-right"></i>');
             $('.email-button').append('<i class="fi-mail"></i>');
 

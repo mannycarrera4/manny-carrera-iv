@@ -8,6 +8,12 @@ requirejs.config({
     paths: {
         'jquery': 'assets/vendor/jquery/dist/jquery.min',
         'foundation': 'assets/vendor/foundation-sites/dist/foundation.min'
+    },
+    shim: {
+        'foundation': {
+            'deps': ['jquery'],
+            'exports': ['Foundation']
+        }
     }
 });
 

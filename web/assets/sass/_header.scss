@@ -1,68 +1,72 @@
-.fixed {
-    z-index: 1;
+.mc-off-canvas-content {
+  background-color: transparent;
 }
 
-.menu-container {
-    float: right;
-    color: #fff;
-    font-size: 20px;
-    margin-top: 8px;
-}
+// .fixed {
+//     z-index: 1;
+// }
 
-.overlay {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(33, 153, 232, 0.9);
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-    transition: opacity 0.5s, visibility 0s 0.5s;
+// .menu-container {
+//     float: right;
+//     color: #fff;
+//     font-size: 20px;
+//     margin-top: 8px;
+// }
 
-    &.open {
-        opacity: 1;
-        visibility: visible;
-        .align-vertical-center {
-            opacity: 0.1;
-        }
-    }
+// .overlay {
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     background: rgba(33, 153, 232, 0.9);
+//     opacity: 0;
+//     visibility: hidden;
+//     -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+//     transition: opacity 0.5s, visibility 0s 0.5s;
 
-    &.closed {
-        opacity: 0;
-        visibility: hidden;
-    }
+//     &.open {
+//         opacity: 1;
+//         visibility: visible;
+//         .align-vertical-center {
+//             opacity: 0.1;
+//         }
+//     }
 
-    .menu-list {
-        background: transparent;
-        text-align: center;
+//     &.closed {
+//         opacity: 0;
+//         visibility: hidden;
+//     }
 
-        li > a {
-            color: #fff;
-            font-size: 40px;
-            @include ubuntuBold;
-        }
-    }
+//     .menu-list {
+//         background: transparent;
+//         text-align: center;
 
-    .close-icon {
-        position: absolute;
-        height: 35px;
-        width: 35px;
-        margin: 17px;
-        top: 9px;
-        right: 0;
-    }
+//         li > a {
+//             color: #fff;
+//             font-size: 40px;
+//             @include ubuntuBold;
+//         }
+//     }
 
-    .menu-nav {
-        position: relative;
-        top: 50%;
-        height: 60%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        text-align: center;
-    }
-}
+//     .close-icon {
+//         position: absolute;
+//         height: 35px;
+//         width: 35px;
+//         margin: 17px;
+//         top: 9px;
+//         right: 0;
+//     }
+
+//     .menu-nav {
+//         position: relative;
+//         top: 50%;
+//         height: 60%;
+//         -webkit-transform: translateY(-50%);
+//         transform: translateY(-50%);
+//         text-align: center;
+//     }
+// }
 
 // .overlay {
 //     position: fixed;
