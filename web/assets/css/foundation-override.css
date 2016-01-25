@@ -1,4 +1,4 @@
-.button {
+.homepage .button {
   border: 2px solid #fff;
   background: transparent;
   border-radius: 50px;
@@ -9,16 +9,17 @@
   transition: all 0.3s;
   overflow: hidden;
   position: relative;
-  -webkit-tap-highlight-color: transparent; }
-  .button:focus {
+  -webkit-tap-highlight-color: transparent;
+  min-width: 260px; }
+  .homepage .button:focus {
     outline: none; }
-  .button:hover {
+  .homepage .button:hover {
     background: #007ee5; }
-    .button:hover .fi-arrow-right,
-    .button:hover .fi-mail {
+    .homepage .button:hover .fi-arrow-right,
+    .homepage .button:hover .fi-mail {
       left: 80%; }
-  .button .fi-arrow-right,
-  .button .fi-mail {
+  .homepage .button .fi-arrow-right,
+  .homepage .button .fi-mail {
     left: 130%;
     position: absolute;
     -webkit-transition: all 0.3s;

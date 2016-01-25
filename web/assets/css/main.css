@@ -88,7 +88,7 @@
       display: block;
       -webkit-font-smoothing: antialiased; }
 
-.button {
+.homepage .button {
   border: 2px solid #fff;
   background: transparent;
   border-radius: 50px;
@@ -99,16 +99,17 @@
   transition: all 0.3s;
   overflow: hidden;
   position: relative;
-  -webkit-tap-highlight-color: transparent; }
-  .button:focus {
+  -webkit-tap-highlight-color: transparent;
+  min-width: 260px; }
+  .homepage .button:focus {
     outline: none; }
-  .button:hover {
+  .homepage .button:hover {
     background: #007ee5; }
-    .button:hover .fi-arrow-right,
-    .button:hover .fi-mail {
+    .homepage .button:hover .fi-arrow-right,
+    .homepage .button:hover .fi-mail {
       left: 80%; }
-  .button .fi-arrow-right,
-  .button .fi-mail {
+  .homepage .button .fi-arrow-right,
+  .homepage .button .fi-mail {
     left: 130%;
     position: absolute;
     -webkit-transition: all 0.3s;
@@ -157,12 +158,36 @@
 .homepage .title-bar {
   background: transparent; }
 
+.top-bar.fixed {
+  position: fixed;
+  width: 100%; }
+
 .projects .menu li > a,
 .about .menu li > a {
   color: #000; }
 
-.menu li > a:hover, .menu li > a:active {
-  border-bottom: 3px solid #007ee5; }
+.menu .header-link {
+  position: relative;
+  padding-bottom: 8px; }
+  .menu .header-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #007ee5;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s; }
+  .menu .header-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  .menu .header-link:active {
+    border-bottom: 3px solid #007ee5; }
 
 body {
   position: relative;
@@ -186,6 +211,7 @@ body {
   background-size: cover; }
 
 .align-vertical-center {
+  margin: 0 18px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -193,9 +219,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 97vh;
   flex-direction: column;
   text-align: center; }
+  @media screen and (min-width: 668px) {
+    .align-vertical-center {
+      margin: 0 auto; } }
 
 .footer {
   font-size: 12px;
@@ -206,8 +235,11 @@ body {
   color: #fff;
   font-family: 'CamptonBold', sans-serif;
   max-width: 700px;
-  font-size: 36px;
+  font-size: 25px;
   margin-bottom: 30px; }
+  @media screen and (min-width: 668px) {
+    .hero-title {
+      font-size: 28px; } }
 
 .logo {
   height: 55px;

@@ -29,10 +29,16 @@ body {
 }
 
 .align-vertical-center {
+    margin: 0 18px;
+
+    @media screen and (min-width: 668px) {
+      margin: 0 auto;
+    }
+
     @include flexbox();
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 97vh;
     flex-direction: column;
     text-align: center;
 }
@@ -47,8 +53,12 @@ body {
     color: #fff;
     @include camptonBold();
     max-width: 700px;
-    font-size: 36px;
+    font-size: 25px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 668px) {
+      font-size: 28px;
+    }
 }
 
 .logo {
