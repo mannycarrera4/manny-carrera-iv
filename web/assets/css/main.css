@@ -103,7 +103,7 @@
   .button:focus {
     outline: none; }
   .button:hover {
-    background: #198BE8; }
+    background: #007ee5; }
     .button:hover .fi-arrow-right,
     .button:hover .fi-mail {
       left: 80%; }
@@ -157,20 +157,15 @@
 .homepage .title-bar {
   background: transparent; }
 
-.projects .menu li > a {
+.projects .menu li > a,
+.about .menu li > a {
   color: #000; }
 
-body {
-  position: relative; }
+.menu li > a:hover, .menu li > a:active {
+  border-bottom: 3px solid #007ee5; }
 
-.homepage {
-  height: 100vh;
-  background: #007EE5;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), rgba(0, 0, 0, 0.8) url("../img/background2.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+  position: relative;
   -webkit-animation: fadein 2s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s;
@@ -180,6 +175,15 @@ body {
   -o-animation: fadein 2s;
   /* Opera < 12.1 */
   animation: fadein 2s; }
+
+.homepage {
+  height: 100vh;
+  background: #007EE5;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), rgba(0, 0, 0, 0.8) url("../img/background2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .align-vertical-center {
   display: -webkit-box;
@@ -200,7 +204,10 @@ body {
 
 .hero-title {
   color: #fff;
-  font-family: 'CamptonBold', sans-serif; }
+  font-family: 'CamptonBold', sans-serif;
+  max-width: 700px;
+  font-size: 36px;
+  margin-bottom: 30px; }
 
 .logo {
   height: 55px;
@@ -214,3 +221,6 @@ body {
 .description {
   color: #fff;
   font-family: 'UbuntuItalic', sans-serif; }
+
+.about .social-icon-wrap {
+  background: #007ee5; }

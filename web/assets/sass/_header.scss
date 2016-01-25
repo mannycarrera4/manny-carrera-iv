@@ -12,10 +12,20 @@
   }
 }
 
-.projects {
+.projects,
+.about {
     .menu {
         li > a {
             color: #000;
+        }
+    }
+}
+
+.menu {
+    li > a {
+        &:hover,
+        &:active {
+            border-bottom: 3px solid #007ee5;
         }
     }
 }

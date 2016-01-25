@@ -13,7 +13,7 @@
   .button:focus {
     outline: none; }
   .button:hover {
-    background: #198BE8; }
+    background: #007ee5; }
     .button:hover .fi-arrow-right,
     .button:hover .fi-mail {
       left: 80%; }
