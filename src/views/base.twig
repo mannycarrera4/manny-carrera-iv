@@ -15,22 +15,15 @@
 
         {% block stylesheet '' %}
     </head>
-    <body>
-        <div class="off-canvas-wrapper">
-            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-                <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right"></div>
-                <div class="off-canvas-content mc-off-canvas-content" data-off-canvas-content>
-                    {% block header %}
-                        {% include 'header.twig' %}
-                    {% endblock %}
-                    {% block body '' %}
+    <body class="{% block theme %}homepage{% endblock %}">
+        {% block header %}
+            {% include 'header.twig' %}
+        {% endblock %}
+        {% block body '' %}
 
-                    {% block footer %}
-                        {% include 'footer.twig' %}
-                    {% endblock %}
-                </div>
-            </div>
-          </div>
+        {% block footer %}
+            {% include 'footer.twig' %}
+        {% endblock %}
 
         {% block javascripts %}
             <script data-main="assets/js/config" src="assets/vendor/requirejs/require.js"></script>

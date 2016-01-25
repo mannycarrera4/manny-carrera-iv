@@ -1,5 +1,5 @@
 $primary-color: #333;
-$background-color: rgba(0, 0, 0, 0.7);
+$background-color: rgba(0, 0, 0, 0.8);
 $gradient: linear-gradient($background-color, $background-color);
 @import '../vendor/bourbon/app/assets/stylesheets/bourbon';
 @import 'mixins';
@@ -10,6 +10,10 @@ $gradient: linear-gradient($background-color, $background-color);
 @import 'header';
 
 body {
+  position: relative;
+}
+
+.homepage {
     height: 100vh;
     background: #007EE5;
     background: $gradient, $background-color  url('../img/background2.jpg') no-repeat center center fixed;
@@ -29,8 +33,9 @@ body {
     @include flexbox();
     align-items: center;
     justify-content: center;
-    height: 96vh;
+    height: 90vh;
     flex-direction: column;
+    text-align: center;
 }
 
 .footer {
@@ -45,21 +50,16 @@ body {
 }
 
 .logo {
-    height: 45px;
-    widows: 45px;
+    height: 55px;
+    width: 55px;
+    float: left;
 }
 
-.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-
-    .top-bar {
-        background: transparent;
-        padding: 1rem;
-    }
+.top-bar {
+    background: transparent;
+    padding: 1rem;
 }
+
 
 .description {
     color: #fff;

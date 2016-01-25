@@ -25,4 +25,8 @@ $app->get('/projects', function () use ($app) {
     return $app['twig']->render('projects.twig', []);
 })->bind('projects');
 
+$app->get('/about', function () use ($app) {
+    return $app['twig']->render('about.twig', []);
+})->bind('about');
+
 $app->run();

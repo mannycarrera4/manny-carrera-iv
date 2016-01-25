@@ -1,33 +1,25 @@
-{# <div class="fixed">
-    <nav class="top-bar" data-topbar role="navigation">
-        <a href="{{ path('home') }}">
-            <img class="logo" src="assets/img/logo_carrera.png">
-        </a>
+{# <nav class="menu">
+    <a href="{{ path('home') }}">
+        <img class="logo" src="assets/img/logo_carrera.png">
+    </a>
+    <ul class="menu align-right">
+        <li><a href="{{ path('home') }}">Home</a></li>
+        <li><a href="{{ path('about') }}">About</a></li>
+        <li><a href="{{ path('projects') }}">Projects</a></li>
+    </ul>
+</nav> #}
 
-        <div id="trigger-overlay" class="menu-container">
-            <i class="menu-icon"></i>
-        </div>
-
-        <div class="overlay">
-            <button type="button" class="overlay-close close-icon">
-                <img src="assets/img/cross.png">
-            </button>
-            <nav class="menu-nav">
-                <ul class="menu-list">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </nav>
-</div> #}
-
-<div class="title-bar">
-  <div class="title-bar-right">
-    <div data-open="offCanvasRight">
-        <i class="menu-icon"></i>
+<header class="top-bar fixed">
+    <div class="top-bar-left">
+       <a href="{{ path('home') }}">
+           <img class="logo" src="assets/img/logo_carrera_blue.png">
+       </a>
     </div>
-  </div>
-</div>
+    <div class="top-bar-right">
+        <ul class="menu align-right">
+            <li><a href="{{ path('about') }}">About</a></li>
+            <li><a href="{{ path('projects') }}">Projects</a></li>
+            <li><a href="{{ path('home') }}">Home</a></li>
+        </ul>
+    </div>
+</header>
