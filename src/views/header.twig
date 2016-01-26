@@ -1,19 +1,15 @@
-{# <nav class="menu">
-    <a href="{{ path('home') }}">
-        <img class="logo" src="assets/img/logo_carrera.png">
-    </a>
-    <ul class="menu align-right">
-        <li><a href="{{ path('home') }}">Home</a></li>
-        <li><a href="{{ path('about') }}">About</a></li>
-        <li><a href="{{ path('projects') }}">Projects</a></li>
-    </ul>
-</nav> #}
+{% set route = app.request.attributes.get('_route') %}
+{% set logoSource = 'assets/img/logo_carrera.png' %}
+
+{% if route in ['projects', 'about'] %}
+    {% set logoSource = 'assets/img/logo_carrera_blue.png' %}
+{% endif %}
 
 <header class="top-bar fixed">
     <div class="top-bar-left">
-       <a href="{{ path('home') }}">
-           <img class="logo" src="assets/img/logo_carrera_blue.png">
-       </a>
+        <a href="{{ path('home') }}">
+            <img class="logo" src="{{ logoSource }}">
+        </a>
     </div>
     <div class="top-bar-right">
         <ul class="menu align-right">

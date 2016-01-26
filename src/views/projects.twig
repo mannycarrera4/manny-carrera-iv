@@ -3,14 +3,33 @@
 {% block theme %}projects{% endblock %}
 {% block body %}
     <div class="row">
-        <div class="large-4 columns">
-            <img class="thumbnail" src="assets/img/climbable-v3.jpg">
-        </div>
-        <div class="large-4 columns">
-            <img class="thumbnail" src="assets/img/radio-app-design-dribbble.png">
-        </div>
-        <div class="large-4 columns">
-            <img class="thumbnail" src="assets/img/coffe-mug-copy.jpg">
+        <div class="content-container">
+            <div class="row" data-equalizer data-equalizer-mq="large-up">
+              <div class="medium-6 columns panel" data-equalizer-watch>
+                <img class="thumbnail" src="assets/img/climbable-v3.jpg">
+              </div>
+              <div class="medium-6 columns panel" data-equalizer-watch>
+                Project One
+              </div>
+            </div>
+
+            <div class="row" data-equalizer data-equalizer-mq="large-up">
+              <div class="medium-6 columns panel" data-equalizer-watch>
+                Project two
+              </div>
+              <div class="medium-6 columns panel" data-equalizer-watch>
+                <img class="thumbnail" src="assets/img/radio-app-design-dribbble.png">
+              </div>
+            </div>
+
+            <div class="row" data-equalizer data-equalizer-mq="large-up">
+              <div class="medium-6 columns panel" data-equalizer-watch>
+                <img class="thumbnail" src="assets/img/coffe-mug-copy.jpg">
+              </div>
+              <div class="medium-6 columns panel" data-equalizer-watch>
+                Project 3
+              </div>
+            </div>
         </div>
     </div>
 {% endblock %}

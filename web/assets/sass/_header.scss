@@ -24,6 +24,11 @@
             color: #000;
         }
     }
+
+    .top-bar.fixed {
+        box-shadow: 0 1.5px 4px rgba(65,92,105,.06);
+        background: white;
+    }
 }
 
 .menu {

@@ -166,6 +166,11 @@
 .about .menu li > a {
   color: #000; }
 
+.projects .top-bar.fixed,
+.about .top-bar.fixed {
+  box-shadow: 0 1.5px 4px rgba(65, 92, 105, 0.06);
+  background: white; }
+
 .menu .header-link {
   position: relative;
   padding-bottom: 8px; }
@@ -256,3 +261,6 @@ body {
 
 .about .social-icon-wrap {
   background: #007ee5; }
+
+.content-container {
+  margin: 10% 5% 0; }
