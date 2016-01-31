@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "CamptonBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/campton/campton-bolddemo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/campton/campton-bolddemo-webfont.woff2") format("woff2"), url("../fonts/campton/campton-bolddemo-webfont.woff") format("woff"), url("../fonts/campton/campton-bolddemo-webfont.ttf") format("truetype"), url("../fonts/campton/campton-bolddemo-webfont.svg#CamptonBold") format("svg"); }
+
+@font-face {
+  font-family: "CamptonLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/campton/campton-lightdemo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/campton/campton-lightdemo-webfont.woff2") format("woff2"), url("../fonts/campton/campton-lightdemo-webfont.woff") format("woff"), url("../fonts/campton/campton-lightdemo-webfont.ttf") format("truetype"), url("../fonts/campton/campton-lightdemo-webfont.svg#CamptonLight") format("svg"); }
+
+@font-face {
+  font-family: "UbuntuBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ubuntu/ubuntu-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-bold-webfont.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-bold-webfont.woff") format("woff"), url("../fonts/ubuntu/ubuntu-bold-webfont.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-bold-webfont.svg#UbuntuBold") format("svg"); }
+
+@font-face {
+  font-family: "UbuntuItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ubuntu/ubuntu-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-italic-webfont.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-italic-webfont.woff") format("woff"), url("../fonts/ubuntu/ubuntu-italic-webfont.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-italic-webfont.svg#UbuntuItalic") format("svg"); }
+
+@font-face {
+  font-family: "VollkornRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/vollkorn/vollkorn-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/vollkorn/vollkorn-regular-webfont.woff2") format("woff2"), url("../fonts/vollkorn/vollkorn-regular-webfont.woff") format("woff"), url("../fonts/vollkorn/vollkorn-regular-webfont.ttf") format("truetype"), url("../fonts/vollkorn/vollkorn-regular-webfont.svg#VollkornRegular") format("svg"); }
+
+.about-me-title {
+  font-family: 'CamptonBold', sans-serif; }
+
+.about-me-text {
+  font-family: 'VollkornRegular', serif;
+  font-size: 20px;
+  color: #666;
+  max-width: 700px; }
+
+.portfolio-link {
+  color: #007EE5; }
+
+.about-me-img {
+  height: 100%;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  margin-right: 10px; }
+
+.about-me-content-container {
+  display: inline-block; }
+
+.img-container {
+  display: inline-block; }
+
+.about-me-img,
+.about-me-content-container {
+  vertical-align: top; }

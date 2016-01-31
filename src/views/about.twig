@@ -1,25 +1,41 @@
 {% extends 'base.twig' %}
 
+{% block stylesheet %}
+    <link rel="stylesheet" href="assets/css/about.css">
+{% endblock %}
+
 {% block theme %}about{% endblock %}
 {% block body %}
     <div class="row">
         <div class="content-container">
-            <div class="social-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
-                <a class="link" href="https://dribbble.com/mcarrera4" target="_blank">
-                    <i class="social-icon fi-social-dribbble"></i>
-                </a>
-                <a href="https://github.com/mannycarrera4" target="_blank">
-                    <i class="social-icon fi-social-github"></i>
-                </a>
-                <a href="https://www.instagram.com/mannysketches/" target="_blank">
-                   <i class="social-icon fi-social-instagram"></i>
-                </a>
-                <a href="https://twitter.com/mcarrera4" target="_blank">
-                    <i class="social-icon fi-social-twitter"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/manuelcarreraiv" target="_blank">
-                    <i class="social-icon fi-social-linkedin"></i>
-                </a>
+            <div class="img-container">
+                <img class="about-me-img" src="assets/img/me.jpg">
+            </div>
+            <div class="about-me-content-container">
+                <h2 class="about-me-title">About me</h2>
+                <div class="about-me-text">
+                <p>Hola! My name is Manuel Carrera IV, but you can call me Manny. I'm a passionately curious junior front developer working at <a class="portfolio-link" href="https://www.opensky.com/" target="_blank">OpenSky</a></p>
+                <p>I was born in raised in the beautiful island of the Dominican Republic and then moves to Rochester, NY where I got my bachelors in graphic design. Currently based in Nashville, Tennessee, I bring UX/UI solutions to life through programming.</p>
+                <p>Besides developing and design, I enjoy urban sketching, which allows me to capture and journal my experiences.</p>
+                <p>Feel free to contact me with any questions or inqueries about my work!</p>
+                </div>
+                <div class="social-icon-wrap hi-icon-effect-1 hi-icon-effect-1a">
+                    <a class="link" href="https://dribbble.com/mcarrera4" target="_blank">
+                        <i class="social-icon fi-social-dribbble"></i>
+                    </a>
+                    <a href="https://github.com/mannycarrera4" target="_blank">
+                        <i class="social-icon fi-social-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mannysketches/" target="_blank">
+                       <i class="social-icon fi-social-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/mcarrera4" target="_blank">
+                        <i class="social-icon fi-social-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/manuelcarreraiv" target="_blank">
+                        <i class="social-icon fi-social-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

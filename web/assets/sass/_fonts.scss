@@ -2,6 +2,7 @@
 @include font-face('CamptonLight', '../fonts/campton/campton-lightdemo-webfont');
 @include font-face('UbuntuBold', '../fonts/ubuntu/ubuntu-bold-webfont');
 @include font-face('UbuntuItalic', '../fonts/ubuntu/ubuntu-italic-webfont');
+@include font-face('VollkornRegular', '../fonts/vollkorn/vollkorn-regular-webfont');
 // @include font-face('GeomanistItalic', '../fonts/geomanist/geomanist-regular-italic-webfont');
 // @include font-face('Galano', '../fonts/galano/galano-webfont');
 // @include font-face('GalanoBold', '../fonts/galano/galano-bold-webfont');
@@ -20,4 +21,8 @@
 
 @mixin ubuntuItalic() {
     font-family: 'UbuntuItalic', sans-serif;
+}
+
+@mixin vollkornRegular() {
+    font-family: 'VollkornRegular', serif;
 }

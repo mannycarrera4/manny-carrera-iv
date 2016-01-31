@@ -78,12 +78,10 @@ body {
     @include ubuntuItalic();
 }
 
-.about {
-  .social-icon-wrap {
-    background: #007ee5;
-  }
-}
-
 .content-container {
-  margin: 10% 5% 0;
+  margin: 120px 5% 0;
+
+  @media screen and (min-width: 768px) {
+    margin: 10% 5% 0;
+  }
 }

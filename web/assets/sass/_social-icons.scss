@@ -1,31 +1,7 @@
 .social-icon-wrap {
-    text-align: center;
     margin: 0 auto;
     padding: 2em 0 3em;
-
-    .social-icon:hover {
-        background: rgba(255,255,255,1);
-
-        &.fi-social-dribbble {
-            color: #ea4c89;
-        }
-
-        &.fi-social-github {
-            color: #171515;
-        }
-
-        &.fi-social-instagram {
-            color: #125688;
-        }
-
-        &.fi-social-twitter {
-            color: #00aced;
-        }
-
-        &.fi-social-linkedin {
-            color: #007bb5;
-        }
-    }
+    background: none;
 
     .social-icon {
         display: inline-block;
@@ -38,10 +14,11 @@
         position: relative;
         z-index: 1;
         color: #fff;
-        background: rgba(255,255,255,0.1);
+        background: rgb(0,126,229);
         -webkit-transition: background 0.2s, color 0.2s;
         -moz-transition: background 0.2s, color 0.2s;
         transition: background 0.2s, color 0.2s;
+        text-align: center;
 
         &:hover {
             &:after {
@@ -66,7 +43,7 @@
             top: -5px;
             left: -5px;
             padding: 5px;
-            box-shadow: 0 0 0 2px #fff;
+            box-shadow: 0 0 0 2px #007ee5;
             -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
             -webkit-transform: scale(.8);
             -moz-transition: -moz-transform 0.2s, opacity 0.2s;
