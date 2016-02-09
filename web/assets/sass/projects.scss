@@ -9,16 +9,26 @@
 
     .climbable-panel {
         background: #07131f;
+        max-height: 620px;
+        height: auto;
+    }
+
+    .climbable-panel.content-panel {
+        height: auto !important;
+
+        @media screen and (min-width: 665px) {
+            height: 566px !important;
+        }
     }
 
     .thumbnail {
         border: none;
         box-shadow: none;
-        max-height: 600px;
+        max-height: 550px;
     }
 
-    .climbable-img {
-        max-height: 600px;
+    .img-panel {
+        text-align: center;
     }
 
     h1 {
@@ -32,5 +42,10 @@
     .radio-app-panel {
         background: #f6f6f6;
         color: #333;
+    }
+
+    .project-description {
+        margin: 30px;
+        text-align: center;
     }
 }

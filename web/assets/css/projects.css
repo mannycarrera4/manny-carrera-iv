@@ -32,7 +32,7 @@
   border: 2px solid #fff;
   background: transparent;
   border-radius: 50px;
-  padding: 25px 80px;
+  padding: 25px 45px;
   font-weight: bold;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -40,7 +40,7 @@
   overflow: hidden;
   position: relative;
   -webkit-tap-highlight-color: transparent;
-  min-width: 260px; }
+  max-width: 260px; }
   .button:focus {
     outline: none; }
   .button:hover {
@@ -56,19 +56,30 @@
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
 
+.projects .button {
+  margin: 15px auto; }
+
 .projects .panel {
   color: #fff; }
 
 .projects .climbable-panel {
-  background: #07131f; }
+  background: #07131f;
+  max-height: 620px;
+  height: auto; }
+
+.projects .climbable-panel.content-panel {
+  height: auto !important; }
+  @media screen and (min-width: 665px) {
+    .projects .climbable-panel.content-panel {
+      height: 566px !important; } }
 
 .projects .thumbnail {
   border: none;
   box-shadow: none;
-  max-height: 600px; }
+  max-height: 550px; }
 
-.projects .climbable-img {
-  max-height: 600px; }
+.projects .img-panel {
+  text-align: center; }
 
 .projects h1 {
   font-family: 'CamptonBold', sans-serif; }
@@ -79,3 +90,7 @@
 .projects .radio-app-panel {
   background: #f6f6f6;
   color: #333; }
+
+.projects .project-description {
+  margin: 30px;
+  text-align: center; }
