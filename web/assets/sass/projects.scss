@@ -1,0 +1,27 @@
+@import '../vendor/bourbon/app/assets/stylesheets/bourbon';
+@import 'fonts';
+
+.projects {
+    .climbable-panel {
+        background: #07131f;
+        color: #fff;
+    }
+
+    .thumbnail {
+        border: none;
+        box-shadow: none;
+    }
+
+    .climbable-img {
+        max-height: 600px;
+    }
+
+    h1 {
+        @include camptonBold();
+    }
+
+    .sketch-panel {
+        color: #fff;
+        background: #df84a6;
+    }
+}

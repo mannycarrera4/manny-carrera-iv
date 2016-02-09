@@ -1,21 +1,29 @@
 {% extends 'base.twig' %}
 
+{% block stylesheet %}
+    <link rel="stylesheet" href="assets/css/projects.css">
+{% endblock %}
+
 {% block theme %}projects{% endblock %}
 {% block body %}
     <div class="row">
         <div class="content-container">
             <div class="row" data-equalizer data-equalizer-mq="large-up">
-              <div class="medium-6 columns panel" data-equalizer-watch>
-                <img class="thumbnail" src="assets/img/climbable-v3.jpg">
+              <div class="medium-6 columns panel climbable-panel" data-equalizer-watch>
+                <h1>Climable</h1>
+                <p>Climable is an app that allows people to locate nearby climbing location</p>
+                <button>View project</button>
               </div>
-              <div class="medium-6 columns panel" data-equalizer-watch>
-                Project One
+              <div class="medium-6 columns panel climbable-panel" data-equalizer-watch>
+                <img class="thumbnail project-img climbable-img" src="assets/img/iphone6-climbable.png">
               </div>
             </div>
 
             <div class="row" data-equalizer data-equalizer-mq="large-up">
               <div class="medium-6 columns panel" data-equalizer-watch>
-                Project two
+                <h1>Radio 100.1 App</h1>
+                <p>Radio app 100.1 is for a local radio station in the Dominican Republic</p>
+                <button>View project</button>
               </div>
               <div class="medium-6 columns panel" data-equalizer-watch>
                 <img class="thumbnail" src="assets/img/radio-app-design-dribbble.png">
@@ -23,11 +31,13 @@
             </div>
 
             <div class="row" data-equalizer data-equalizer-mq="large-up">
-              <div class="medium-6 columns panel" data-equalizer-watch>
-                <img class="thumbnail" src="assets/img/coffe-mug-copy.jpg">
+              <div class="medium-6 columns panel sketch-panel" data-equalizer-watch>
+                <img class="thumbnail" src="assets/img/sketch-pad-6.png">
               </div>
-              <div class="medium-6 columns panel" data-equalizer-watch>
-                Project 3
+              <div class="medium-6 columns panel sketch-panel" data-equalizer-watch>
+                <h1>Radio 100.1 App</h1>
+                <p>Radio app 100.1 is for a local radio station in the Dominican Republic</p>
+                <button>View project</button>
               </div>
             </div>
         </div>
