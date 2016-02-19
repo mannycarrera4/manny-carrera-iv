@@ -19,6 +19,7 @@
 
     &:hover {
         background: #007ee5;
+        border: 2px solid #007ee5;
 
         .fi-arrow-right,
         .fi-mail {
@@ -39,5 +40,15 @@
 .projects {
     .button {
         margin: 15px auto;
+    }
+}
+
+.homepage {
+    .button {
+        min-width: 285px;
+
+        @media screen and (min-width: 568px) {
+            min-width: 235px;
+        }
     }
 }

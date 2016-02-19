@@ -99,7 +99,8 @@
   .button:focus {
     outline: none; }
   .button:hover {
-    background: #007ee5; }
+    background: #007ee5;
+    border: 2px solid #007ee5; }
     .button:hover .fi-arrow-right,
     .button:hover .fi-mail {
       left: 80%; }
@@ -113,6 +114,12 @@
 
 .projects .button {
   margin: 15px auto; }
+
+.homepage .button {
+  min-width: 285px; }
+  @media screen and (min-width: 568px) {
+    .homepage .button {
+      min-width: 235px; } }
 
 @keyframes fadein {
   from {
@@ -223,7 +230,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 97vh;
+  height: 100vh;
   flex-direction: column;
   text-align: center; }
   @media screen and (min-width: 668px) {
@@ -233,14 +240,20 @@ body {
 .footer {
   font-size: 12px;
   color: #fff;
-  padding: 0 1rem; }
+  position: absolute;
+  bottom: 10px;
+  text-align: left; }
+  @media screen and (min-width: 768px) {
+    .footer {
+      padding-left: 1rem; } }
 
 .hero-title {
   color: #fff;
   font-family: 'CamptonBold', sans-serif;
   max-width: 700px;
   font-size: 25px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  margin-top: 24px; }
   @media screen and (min-width: 668px) {
     .hero-title {
       font-size: 28px; } }
@@ -259,7 +272,8 @@ body {
   font-family: 'UbuntuItalic', sans-serif; }
 
 .content-container {
-  margin: 120px 5% 0; }
-  @media screen and (min-width: 768px) {
-    .content-container {
-      margin: 10% 5% 0; } }
+  margin: 87px 5% 0;
+  padding-top: 60px; }
+
+.projects .content-container {
+  padding-top: 0; }

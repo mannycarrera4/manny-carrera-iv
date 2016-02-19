@@ -7,17 +7,23 @@
         color: #fff;
     }
 
-    .climbable-panel {
+    .climbable-container {
         background: #07131f;
+    }
+
+    .climbable-panel {
         max-height: 620px;
         height: auto;
     }
 
     .climbable-panel.content-panel {
-        height: auto !important;
+        color: #fff;
+        margin-left: -1px;
+        // height: auto !important;
 
-        @media screen and (min-width: 665px) {
-            height: 566px !important;
+        @media screen and (min-width: 640px) {
+            height: 546px;
+            margin-bottom: 0;
         }
     }
 
@@ -38,11 +44,25 @@
 
     .sketch-panel {
         background: #df84a6;
+        color: #fff;
+
+        @media screen and (min-width: 640px) {
+            height: 400px;
+        }
+
+        @media screen and (min-width: 768px) {
+            height: 546px;
+        }
     }
 
     .radio-app-panel {
         background: #f6f6f6;
         color: #333;
+
+        @media screen and (min-width: 640px) {
+            height: 546px;
+            margin-bottom: 0;
+        }
     }
 
     .project-description {
@@ -58,5 +78,10 @@
     .button.radio-app-button {
         border: 2px solid #333;
         color: #333;
+
+        &:hover {
+            color: #fff;
+            border: 2px solid #007ee5;
+        }
     }
 }

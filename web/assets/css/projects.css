@@ -44,7 +44,8 @@
   .button:focus {
     outline: none; }
   .button:hover {
-    background: #007ee5; }
+    background: #007ee5;
+    border: 2px solid #007ee5; }
     .button:hover .fi-arrow-right,
     .button:hover .fi-mail {
       left: 80%; }
@@ -59,19 +60,29 @@
 .projects .button {
   margin: 15px auto; }
 
+.homepage .button {
+  min-width: 285px; }
+  @media screen and (min-width: 568px) {
+    .homepage .button {
+      min-width: 235px; } }
+
 .projects .panel {
   color: #fff; }
 
+.projects .climbable-container {
+  background: #07131f; }
+
 .projects .climbable-panel {
-  background: #07131f;
   max-height: 620px;
   height: auto; }
 
 .projects .climbable-panel.content-panel {
-  height: auto !important; }
-  @media screen and (min-width: 665px) {
+  color: #fff;
+  margin-left: -1px; }
+  @media screen and (min-width: 640px) {
     .projects .climbable-panel.content-panel {
-      height: 566px !important; } }
+      height: 546px;
+      margin-bottom: 0; } }
 
 .projects .thumbnail {
   border: none;
@@ -86,11 +97,22 @@
   font-family: 'CamptonBold', sans-serif; }
 
 .projects .sketch-panel {
-  background: #df84a6; }
+  background: #df84a6;
+  color: #fff; }
+  @media screen and (min-width: 640px) {
+    .projects .sketch-panel {
+      height: 400px; } }
+  @media screen and (min-width: 768px) {
+    .projects .sketch-panel {
+      height: 546px; } }
 
 .projects .radio-app-panel {
   background: #f6f6f6;
   color: #333; }
+  @media screen and (min-width: 640px) {
+    .projects .radio-app-panel {
+      height: 546px;
+      margin-bottom: 0; } }
 
 .projects .project-description {
   margin: 30px;
@@ -103,3 +125,6 @@
 .projects .button.radio-app-button {
   border: 2px solid #333;
   color: #333; }
+  .projects .button.radio-app-button:hover {
+    color: #fff;
+    border: 2px solid #007ee5; }
