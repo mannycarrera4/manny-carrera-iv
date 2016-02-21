@@ -1,5 +1,5 @@
 $primary-color: #333;
-$background-color: rgba(0, 0, 0, 0.8);
+$background-color: rgba(0, 0, 0, 0.6);
 $gradient: linear-gradient($background-color, $background-color);
 @import '../vendor/bourbon/app/assets/stylesheets/bourbon';
 @import 'mixins';
@@ -59,26 +59,20 @@ body {
     color: #fff;
     @include camptonBold();
     max-width: 700px;
-    font-size: 25px;
-    margin-bottom: 30px;
+    font-size: 32px;
     margin-top: 24px;
 
-    @media screen and (min-width: 668px) {
-      font-size: 28px;
+    @media screen and (min-width: 667px) {
+      font-size: 55px;
     }
 }
 
-.logo {
-    height: 55px;
-    width: 55px;
-    float: left;
+.hero-subtext {
+  @include vollkornRegular();
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 20px;
 }
-
-.top-bar {
-    background: transparent;
-    padding: 1rem;
-}
-
 
 .description {
     color: #fff;
