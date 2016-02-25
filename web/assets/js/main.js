@@ -7,9 +7,6 @@ function($, Foundation) {
 
     var page = {
         init: function() {
-            console.debug(Foundation);
-            console.debug($);
-
             if(window.Foundation) {
                 $(document).foundation();
             }
@@ -21,14 +18,7 @@ function($, Foundation) {
         },
 
         initEventListeners: function() {
-            $('#trigger-overlay').on('click', function() {
-                console.log('click works');
-                $('.overlay').addClass('open');
-            });
 
-            $('.overlay-close'). on('click', function() {
-                $('.overlay').removeClass('open').addClass('close');
-            });
         }
 
 
